@@ -2,9 +2,23 @@
 
 This project was bootstrapped with [Create React App]
 
-## Available Scripts
+## Available Steps ::--
 
-### trigger "npm install" (if throws error "npm install --f")
+### 01  Follow the Bahmni dev setup guide to set up Bahmni and OpenMRS on 
+local machine ( Follow Docker setup ) 
+(setup link:- https://bahmni.atlassian.net/wiki/spaces/BAH/pages/32604585/Setting+up+Bahmni+Dev+Environment)
+
+		**** follow Bash/gitBash instead of using powershell or terminal in windows machine****
+		
+
+### 02 You can clone patientmfe repository for a starting point after setting up the Bahmni dev setup.
+
+
+### 3  Clone this Repository by :::: git clone https://github.com/KanakSo31/patientmfe.git
+
+### 4 change to the project folder "cd patientmfe"
+
+### 5 Run "npm install" if this command throws error run "npm install --f"
 
 In the project directory, you can run:
 
@@ -33,10 +47,38 @@ See the section about [deployment]
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#########  Micro Frontend Integration   ####
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###### 1. Clone the bahmni-microfrontend-reference  (https://github.com/Bahmni/bahmni-microfrontend-reference) #####
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   			#### use :- git clone https://github.com/Bahmni/bahmni-microfrontend-reference.git
+	  
+##### 2. change to the directory name "bahmni-microfrontend-reference" (***cd bahmni-microfrontend-reference)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+###### 3. In  bahmni-microfrontend-reference folder go to the "/src/entries". then create one directory there with any name you want.
+
+#### 4. Inside the directory you have created, create a file with any name with .jsx extension and inject the code from "./src/components/patientlist.js from patientmfe" 
+
+#### 5. Install required dependencies ::: run :: --- " npm install "  if this refused to install enter " npm install --f "
+
+#### 6. Install AXIOS With The Help Of  : "npm install react-router-dom axios"
+
+#### 7. Install Bootstrap by following::- "npm i bootstrap" if refuse "npm i bootstrap --f"
+
+#### 8. Install bootstrap icon with the help of "npm i bootstrap-icons" if refuse "npm i bootstrap-icons --f"
+
+#### 9. If the above steps going well enter "npm run dev:sandbox"
+
+*****### if throws error after installing bootstrap icon  #####****
+
+			*****Add below codes to package.json file
+   		{
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[hash].[ext]', 
+            outputPath: 'fonts/', 
+          },
+        },
+      },
