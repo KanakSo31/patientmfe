@@ -14,11 +14,11 @@ local machine ( Follow Docker setup )
 ### 02 You can clone patientmfe repository for a starting point after setting up the Bahmni dev setup.
 
 
-### 3  Clone this Repository by :::: git clone https://github.com/KanakSo31/patientmfe.git
+### 03  Clone this Repository by :::: git clone https://github.com/KanakSo31/patientmfe.git
 
-### 4 change to the project folder "cd patientmfe"
+### 04 change to the project folder "cd patientmfe"
 
-### 5 Run "npm install" if this command throws error run "npm install --f"
+### 05 Run "npm install" if this command throws error run "npm install --f"
 
 In the project directory, you can run:
 
@@ -49,25 +49,25 @@ See the section about [deployment]
 
 #########  Micro Frontend Integration   ####
 
-###### 1. Clone the bahmni-microfrontend-reference  (https://github.com/Bahmni/bahmni-microfrontend-reference) #####
+###### 01. Clone the bahmni-microfrontend-reference  (https://github.com/Bahmni/bahmni-microfrontend-reference) #####
 
    			#### use :- git clone https://github.com/Bahmni/bahmni-microfrontend-reference.git
 	  
-##### 2. change to the directory name "bahmni-microfrontend-reference" (***cd bahmni-microfrontend-reference)
+##### 02. change to the directory name "bahmni-microfrontend-reference" (***cd bahmni-microfrontend-reference)
 
-###### 3. In  bahmni-microfrontend-reference folder go to the "/src/entries". then create one directory there with any name you want.
+##### 03. In  bahmni-microfrontend-reference folder go to the "/src/entries". then create one directory there with any name you want.
 
-#### 4. Inside the directory you have created, create a file with any name with .jsx extension and inject the code from "./src/components/patientlist.js from patientmfe" 
+#### 04. Inside the directory you have created, create a file with any name with .jsx extension and inject the code from "./src/components/patientlist.js from patientmfe" 
 
-#### 5. Install required dependencies ::: run :: --- " npm install "  if this refused to install enter " npm install --f "
+#### 05. Install required dependencies ::: run :: --- " npm install "  if this refused to install enter " npm install --f "
 
-#### 6. Install AXIOS With The Help Of  : "npm install react-router-dom axios"
+#### 06. Install AXIOS With The Help Of  : "npm install react-router-dom axios"
 
-#### 7. Install Bootstrap by following::- "npm i bootstrap" if refuse "npm i bootstrap --f"
+#### 07. Install Bootstrap by following::- "npm i bootstrap" if refuse "npm i bootstrap --f"
 
-#### 8. Install bootstrap icon with the help of "npm i bootstrap-icons" if refuse "npm i bootstrap-icons --f"
+#### 08. Install bootstrap icon with the help of "npm i bootstrap-icons" if refuse "npm i bootstrap-icons --f"
 
-#### 9. If the above steps going well enter "npm run dev:sandbox"
+#### 09. If the above steps going well enter "npm run dev:sandbox"
 
 *****### if throws error after installing bootstrap icon  #####****
 
