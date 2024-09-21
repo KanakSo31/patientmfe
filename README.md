@@ -82,3 +82,8 @@ See the section about [deployment]
           },
         },
       },
+## Important Key point to remember ::--
+
+### 1. Focus on docker setup before start coding 
+### 1. Before solving the errors and managing them Focus on understanding the file structure and data flow in very imporatnt task!!
+### 3. Start docker before accesing the data.
