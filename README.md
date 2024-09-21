@@ -1,6 +1,5 @@
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App]
+This React-based Micro Frontend (MFE) displays patient records fetched from the OpenMRS database. It is designed to be integrated into an Angular application as part of the Bahmni project. Below are the setup and running instructions for the MFE.
 
 ## Available Steps ::--
 
