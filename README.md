@@ -52,11 +52,11 @@ See the section about [deployment]
 
    			#### use :- git clone https://github.com/Bahmni/bahmni-microfrontend-reference.git
 	  
-##### 02. change to the directory name "bahmni-microfrontend-reference" (***cd bahmni-microfrontend-reference)
+##### 02. Change to the directory named "bahmni-microfrontend-reference" (***cd bahmni-microfrontend-reference)
 
-##### 03. In  bahmni-microfrontend-reference folder go to the "/src/entries". then create one directory there with any name you want.
+##### 03. In  bahmni-microfrontend-reference folder go to the "/src/entries", then create one directory there with any name you want.
 
-#### 04. Inside the directory you have created, create a file with any name with .jsx extension and inject the code from "./src/components/patientlist.js from patientmfe" 
+#### 04. Inside the directory you have created, create a file with any name "xyz.jsx"  and inject the code from "./src/components/patientlist.js from patientmfe" 
 
 #### 05. Install required dependencies ::: run :: --- " npm install "  if this refused to install enter " npm install --f "
 
@@ -66,7 +66,7 @@ See the section about [deployment]
 
 #### 08. Install bootstrap icon with the help of "npm i bootstrap-icons" if refuse "npm i bootstrap-icons --f"
 
-#### 09. If the above steps going well enter "npm run dev:sandbox"
+#### 09. Run the Command "npm run dev:sandbox"
 
 *****### if throws error after installing bootstrap icon  #####****
 
@@ -81,8 +81,31 @@ See the section about [deployment]
           },
         },
       },
-## Important Key point to remember ::--
+## Key Learnings and Challenges Faced During the Project ::
 
-### 1. Focus on docker setup before start coding 
-### 1. Before solving the errors and managing them Focus on understanding the file structure and data flow in very imporatnt task!!
-### 3. Start docker before accesing the data.
+### 1. Docker Setup and Network Issues:
+Initially, I faced network-related errors after setting up Docker. I had to reinstall Docker to resolve certain optimization errors. After reading documentation and articles on Medium, I was able to fix these issues, but this step took some time and effort.
+
+### 2. Understanding the File Structure and Data Flow:
+Before tackling the errors, I realized the importance of understanding the file structure and data flow in the project. It took me about 1-2 days to get a clear grasp of this, but once I did, it became much easier to solve the integration challenges for the micro frontend (MFE).
+
+### 3. Starting Docker Before Accessing Data:
+While fetching patient data, I encountered errors that were not well-documented online. These errors occurred because Docker wasn’t running when I tried accessing the OpenMRS API. Ensuring Docker is running is a crucial step before data access.
+
+### 4. Database and API Errors Due to Lack of Familiarity with OpenMRS:
+As I began developing the MFE with React, I encountered MySQL database errors and struggled to find the correct API and database tables. After thoroughly reviewing the OpenMRS documentation, I discovered that I had missed some file installations. Reinstalling the required dependencies solved this problem.
+
+### 5. CORS Errors While Using Proxy and Port 8080:
+I initially used a proxy with port 8080 in the API URL, which resulted in persistent CORS errors. Despite consulting with senior developers, friends, and various online resources like Medium and StackOverflow, the issue remained unresolved. Finally, after receiving feedback from you, I removed the proxy and port number from the API links, which successfully resolved the CORS issue.
+
+### 6. Frontend Implementation for Fetching Patient Data:
+Once the backend was stable, I implemented the frontend to fetch and display patient information.
+
+### 7. Challenges in Integrating the MFE with the Angular Application:
+Integrating the MFE into the existing Angular application posed several challenges. The older version of the package installer I was using caused issues during package installation, forcing me to update and install them manually.
+
+### 8. Bootstrap Icons Installation Issues:
+I encountered problems when trying to install Bootstrap icons via the package installer. Eventually, I had to manually add the required Bootstrap files.
+
+### 9. Final Integration of the MFE:
+Throughout the integration process, I faced various issues while trying to merge the MFE with the existing project I had cloned. After investing time in understanding the project’s file structure and data flow, I was able to follow the instructions properly, and the MFE worked seamlessly.
